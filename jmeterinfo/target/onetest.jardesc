@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="/Users/kamlesh.patel/kam/jmeter/lib/junit/zerotest.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/ZeroLoadTest/target/onetest.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="false" exportJavaFiles="false" exportOutputFolder="true">
+        <javaElement handleIdentifier="=ZeroLoadTest/src=/optional=/true=/=/maven.pomderived=/true=/"/>
+        <javaElement handleIdentifier="=ZeroLoadTest/resources"/>
+        <file path="/ZeroLoadTest/.classpath"/>
+        <folder path="/ZeroLoadTest/target/logs"/>
+        <file path="/ZeroLoadTest/target/classes/zerotest/TestZeroApi.class"/>
+        <folder path="/ZeroLoadTest/target/zerocode-test-reports"/>
+        <folder path="/ZeroLoadTest/bin"/>
+        <file path="/ZeroLoadTest/.DS_Store"/>
+        <file path="/ZeroLoadTest/target/.DS_Store"/>
+        <folder path="/ZeroLoadTest/target/maven-archiver"/>
+        <file path="/ZeroLoadTest/target/classes/load.properties"/>
+        <folder path="/ZeroLoadTest/target/maven-status"/>
+        <file path="/ZeroLoadTest/target/zerocode-junit-granular-report.csv"/>
+        <folder path="/ZeroLoadTest/target/classes/com"/>
+        <file path="/ZeroLoadTest/target/classes/.DS_Store"/>
+        <folder path="/ZeroLoadTest/target/generated-sources"/>
+        <file path="/ZeroLoadTest/target/zerocode-junit-interactive-fuzzy-search.html"/>
+        <file path="/ZeroLoadTest/.project"/>
+        <file path="/ZeroLoadTest/pom.xml"/>
+    </selectedElements>
+</jardesc>
