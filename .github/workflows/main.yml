@@ -16,7 +16,7 @@ jobs:
       - shell: bash
         run: ls output            
       - name: Upload to EA
-        uses: kamipatel/uploadaction@v38
+        uses: kamipatel/uploadaction@v40
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
           JOB_CONTEXT: ${{ toJson(job) }}
