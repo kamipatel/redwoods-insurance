@@ -9,7 +9,7 @@ jobs:
 
     steps:          
       - name: Run jmeter step
-        uses: kamipatel/jmeteraction@v400
+        uses: kamipatel/jmeteraction@v403
         with:
           name: output
           path: output
@@ -32,4 +32,3 @@ jobs:
         with:
           name: output
           path: output    
-          
