@@ -1,0 +1,34 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest 
+
+    steps:          
+      - name: Run jmeter step
+        uses: kamipatel/jmeteraction@v400
+        with:
+          name: output
+          path: output
+      - shell: bash
+        run: ls output            
+      - name: Upload to EA
+        uses: kamipatel/uploadaction@v38
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+          JOB_CONTEXT: ${{ toJson(job) }}
+          STEPS_CONTEXT: ${{ toJson(steps) }}
+          RUNNER_CONTEXT: ${{ toJson(runner) }}  
+        with:
+          name: output
+          path: output
+      - shell: bash
+        run: cat output/metrics.csv 
+      - name: Upload action
+        uses: actions/upload-artifact@v1
+        with:
+          name: output
+          path: output    
