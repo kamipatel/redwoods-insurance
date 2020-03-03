@@ -6,7 +6,7 @@ jobs:
 
     steps:          
       - name: Run jmeter step
-        uses: kamipatel/jmeteraction@v411
+        uses: kamipatel/jmeteraction@v412
         env:
             JMX_FILE_NAME: cputest.jmx  
         with:
