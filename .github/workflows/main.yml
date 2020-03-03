@@ -1,15 +1,14 @@
 name: CI
-
 on: [push]
-
 jobs:
   build:
-
     runs-on: ubuntu-latest 
 
     steps:          
       - name: Run jmeter step
-        uses: kamipatel/jmeteraction@v403
+        uses: kamipatel/jmeteraction@v404
+        env:
+            JMX_FILE_NAME: cputest.jmx  
         with:
           name: output
           path: output
@@ -18,7 +17,6 @@ jobs:
       - name: Upload to EA
         uses: kamipatel/uploadaction@v40
         env:
-          JMX_FILE_NAME: cputest.jmx  
           GITHUB_CONTEXT: ${{ toJson(github) }}
           JOB_CONTEXT: ${{ toJson(job) }}
           STEPS_CONTEXT: ${{ toJson(steps) }}
