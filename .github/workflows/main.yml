@@ -18,6 +18,7 @@ jobs:
       - name: Upload to EA
         uses: kamipatel/uploadaction@v40
         env:
+          JMX_FILE_NAME: cputest.jmx  
           GITHUB_CONTEXT: ${{ toJson(github) }}
           JOB_CONTEXT: ${{ toJson(job) }}
           STEPS_CONTEXT: ${{ toJson(steps) }}
