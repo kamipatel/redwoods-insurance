@@ -19,7 +19,7 @@ jobs:
             HUB_PORT: 4444
     steps:          
       - name: Run jmeter step
-        uses: kamipatel/jmeteraction@v420
+        uses: kamipatel/jmeteraction@v421
         env:
             JMX_FILE_NAME: cputest.jmx  
         with:
